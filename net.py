@@ -2,9 +2,8 @@ import random as rand
 
 
 class Net:
-    def __init__(self, data, layers=2):  # Initializes net
+    def __init__(self, data):  # Initializes net
         self.data = data
-        self.layers = layers
         self.weights = []
 
     def preprocess_data(self, data):  # Seperates training data into inputs and outputs
