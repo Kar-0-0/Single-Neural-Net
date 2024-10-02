@@ -47,7 +47,9 @@ class Net:
                 self.weights[self.n], self.learning_rate
             )
             print(f"\nEpoch: {epoch+1}/{self.epochs} Loss: {self.loss}")
-            print(f"1 x 2 = 2 --> {self.input} x {self.weights[self.n]} = {self.out}")
+            print(
+                f"{self.input} x 2 = {self.input*2} --> {self.input} x {self.weights[self.n]} = {self.out}"
+            )
         print(
             "------------------------------------------------------------------------"
         )
